@@ -14,7 +14,8 @@ int factorial(int n){
 }
 
 int main(){
-    int n = 4;
+    int n;
+    std::cin>>n;
     int res = factorial(n);
     std::cout<<res<<std::endl;
 
