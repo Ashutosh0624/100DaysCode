@@ -5,7 +5,6 @@ using namespace std;
 
 int binary_search(std::vector<int>&v1, int key){
     // Binary search only works on sorted arrays.
-    sort(v1.begin(), v1.end());
 
     int low = 0;
     int high = v1.size() - 1;
@@ -20,8 +19,11 @@ int binary_search(std::vector<int>&v1, int key){
 }
 int main(){
     std::vector<int>v1{12, 45, 88, -9, 99, -1};
+    //Sorting must be done before calling the binary search function
     int key;
     cin>>key;
+
+    sort(v1.begin(), v1.end());
     
     int index = binary_search(v1, key);
     if(index != -1){
