@@ -1,0 +1,7 @@
+{
+    "commodities": [
+        {"name": "Bag", "price": 2000},
+        {"name": "Boroplus", "price": 5000},
+        {"name": "Iphone", "price": 4000}
+    ]
+}
